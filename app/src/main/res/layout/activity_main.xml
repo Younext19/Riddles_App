@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777777"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_textview"
+        android:text="Exit"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="373dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exit"
+        app:srcCompat="@drawable/brain" />
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="259dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="317dp"
+            android:layout_height="182dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/problems"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="Problems"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/solutions"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="345dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_button"
+                android:text="Solutions"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/what"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/rounded_textview"
+            android:text="What Will you Learn By Solving ?"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

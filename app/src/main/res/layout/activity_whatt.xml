@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777777"
+    tools:context=".whatt">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="670dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:text="Can solving riddles improve brain function?"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="419dp"
+            android:layout_gravity="center"
+            android:text="We can play with our brain in a smart way with \nthe help of riddles. When creating or interpreting riddles our brain exercise mental processes such as thinking, imagining and reciting.
+
+    While solving jigsaw puzzle our brain produces dopamine that is essential for learning. Riddles can trigger our brain to a number of neural connections with the intention to find solution for the question thrown on us.
+
+    Riddle’s first task is to make us “THINK”. As demonstrated by man, thinking is the top mental activity that brings information together and end up in a meaningful solution. So, it is obvious that solving riddles can improve brain function.
+
+    Also, Riddles develop interpersonal skills in kid by creating a chance to entertain one another in their friend’s circle."
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="282dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/br" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
